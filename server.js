@@ -11,15 +11,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/index.html", function(req, res) {
-	res.sendFile(path.join(__dirname, "html/index.html"));
+	res.sendFile(path.join(__dirname, "./html/index.html"));
 })
 
 app.get("/reserve.html", function(req, res) {
-	res.sendFile(path.join(__dirname, "html/reserve.html"));
+	res.sendFile(path.join(__dirname, "./html/reserve.html"));
 })
 
 app.get("/tables.html", function(req, res) {
-	res.sendFile(path.join(__dirname, "html/tables.html"));
+	res.sendFile(path.join(__dirname, "./html/tables.html"));
 })
 
 app.listen(PORT, function() {
