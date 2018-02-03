@@ -12,7 +12,24 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 
-var tables = [];
+var tables = [
+	{
+		name: "Bob Goodman",
+		email: "bob@bob.com",
+		phNumber: "804-555-4451",
+		specReservations: "Completely Gluten Free"
+	}, {
+		name: "Jill Starkes",
+		email: "jill@jill.com",
+		phNumber: "804-666-4451",
+		specReservations: "Vegan"
+	}, {
+		name: "John Doe",
+		email: "john@doe.com",
+		phNumber: "804-555-5641",
+		specReservations: "Normal Person"
+	}, 
+];
 var waitlist = [];
 
 app.get("/", function(req, res) {
