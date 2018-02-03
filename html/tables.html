@@ -61,7 +61,26 @@
 	<!-- /Main Container -->
 
 
-
+<script>
+	const runTableQuery = () => {
+		let currentUrl = window.location.origin;
+		$.ajax({
+			url: currentUrl + "/api/tables",
+			method: "GET"
+		}).done((tableData)=> {
+			console.log("URL: " + currentUrl + "/api/tables");
+			console.log(tableData)
+			for (let i = 0; i <tableData.length; i++) {
+				let tableSection = $("<div>");
+					tableSection.addClass("card");
+					tableSection.attr("id", "tableCard-" + i+1)
+					$('#reso').append(tableSection);
+					let tableNumber = i+1;
+					$("#tableCard-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + tableData[i].name + "</h2>");
+			}
+		});
+	}
+</script>
 </body>
 
 </html>
