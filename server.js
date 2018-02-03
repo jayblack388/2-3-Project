@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/index.html", function(req, res) {
+app.get("/", function(req, res) {
 	res.sendFile(path.join(__dirname, "./html/index.html"));
 })
 
