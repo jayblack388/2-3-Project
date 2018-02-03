@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- Main Container -->
-<div class="container">
+  <div class="container">
 	<!-- Top Jumbotron -->
 	<div class="row justify-content-center">
 		<div class="col-12">
@@ -25,16 +25,38 @@
 		  		<p>We only have 5 tables! Book your seat before they all are gone!
 				</p>
 		  		<p class="lead">
-		   			<a class="btn btn-primary btn-lg" href="#" role="button">View Tables</a>
-		   			<a class="btn btn-primary btn-lg" href="#" role="button">Home</a>
+		   			<a class="btn btn-primary btn-lg" href="tables.html" role="button">View Tables</a>
+		   			<a class="btn btn-primary btn-lg" href="index.html" role="button">Home</a>
 		  		</p>
 			</div>
 		</div>
 	</div>
 	<!-- /Top Jumbotron -->
+
+<!-- /Main Container -->
+ <!-- Form -->
+  <div class="card">
+      <h5 class="card-header">Make a reservation</h5>
+      <div class="col-12">
+        <form>
+          <div class="form-group">
+            <label for="email-address">Email address</label>
+            <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone-number"></label>
+            <input type="tel" class="form-control" id="phone-number" placeholder="XXX-XXX-XXXX">
+          </div>
+          <div class="form-group">
+            <label for="special-requests">Special Requests</label>
+            <textarea class="form-control" id="special-requests" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+  </div>
+<!-- /Form -->
 </div>
 <!-- /Main Container -->
-
-
 </body>
 </html>
