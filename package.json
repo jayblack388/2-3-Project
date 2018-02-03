@@ -1,0 +1,19 @@
+{
+  "name": "saturdayclasswork-2-3-18",
+  "version": "1.0.0",
+  "description": "Classwork for Saturday 2-3-18",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayblack388/2-3-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayblack388/2-3-Project/issues"
+  },
+  "homepage": "https://github.com/jayblack388/2-3-Project#readme"
+}
