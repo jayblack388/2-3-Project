@@ -11,6 +11,8 @@ const generateUUID = () => { // Public Domain/MIT
 };
 
 
+
+
 const getTables = () => {
     $.get("/api/tables", function(data) {
       console.log(data);

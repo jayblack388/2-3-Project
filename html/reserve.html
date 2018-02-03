@@ -60,7 +60,7 @@
             <label for="special-requests">Special Requests</label>
             <textarea class="form-control" id="special-requests" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          <button type="submit" id="reservation" class="btn btn-primary mb-2">Submit</button>
         </form>
       </div>
     </div>
@@ -70,6 +70,23 @@
   </div>
   </div>
   <!-- /Main Container -->
+
+  <script>
+  $("#reservation").on("click", function(event) {
+      event.preventDefault();
+      var newReso = {
+        name: $("#name").val().trim(),
+        email: $("#email-address").val().trim(),
+        age: $("#phone-number").val().trim(),
+        forcePoints: $("#special-requests").val().trim()
+      };
+      $.post("/api/tables", newReso)
+      .then(function(data) {
+        console.log(data);
+        alert("Adding character...");
+      });
+    });
+  </script>
 </body>
 
 </html>
