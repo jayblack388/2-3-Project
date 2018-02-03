@@ -9,3 +9,21 @@ const generateUUID = () => { // Public Domain/MIT
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
 };
+
+
+const getTables = () => {
+    $.get("/api/tables", function(data) {
+      console.log(data);
+      if (data) {
+        $("#reso").show();
+        $("#name").text(data.name);
+        $("#email").text(data.role);
+        $("#phone").text(data.age);
+        $("#force-points").text(data.forcePoints);
+      }
+      else {
+        $("#name").text("The force is not strong with this one. Your character was not found.");
+        $("#stats").hide();
+      }
+    });
+}
