@@ -45,18 +45,18 @@ app.get("/tables.html", function(req, res) {
 })
 
 
-app.post('/api/tables/'), function (req, res) {
+app.post('/api/tables'), function (req, res) {
 	let newreservation = req.body;
 	console.log(newreservation);
-	tables.push(newcharacter);
-	res.json(newcharacter);
+	tables.push(newreservation);
+	res.json(newreservation);
 };
 
-app.post('/api/waitlist/'), function (req, res) {
+app.post('/api/waitlist'), function (req, res) {
 	let newwaitlist = req.body;
-	console.log(newreservation);
-	waitlist.push(newcharacter);
-	res.json(newcharacter);
+	console.log(newwaitlist);
+	waitlist.push(newwaitlist);
+	res.json(newwaitlist);
 };
 
 
