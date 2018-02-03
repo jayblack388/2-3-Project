@@ -77,7 +77,7 @@
       var newReso = {
         name: $("#name").val().trim(),
         email: $("#email-address").val().trim(),
-        age: $("#phone-number").val().trim(),
+        phNumber: $("#phone-number").val().trim(),
         specReservations: $("#special-requests").val().trim()
       };
       $.post("/api/tables", newReso)
