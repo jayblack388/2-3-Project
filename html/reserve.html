@@ -74,13 +74,20 @@
   <script>
   $("#reservation").on("click", function(event) {
       event.preventDefault();
+      let currentUrl = window.location.origin;
       var newReso = {
         name: $("#name").val().trim(),
         email: $("#email-address").val().trim(),
         phNumber: $("#phone-number").val().trim(),
         specReservations: $("#special-requests").val().trim()
       };
-      $.post("/api/tables", newReso)
+      $.ajax({
+        url: currentUrl + "/api/tables",
+        type: "POST"
+      }).done((res)=>{
+        
+      })
+      ("/api/tables", newReso)
       .then(function(data) {
         console.log(data);
         alert("Adding reservation...");

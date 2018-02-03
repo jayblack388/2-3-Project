@@ -44,6 +44,9 @@ app.get("/tables.html", function(req, res) {
 	res.sendFile(path.join(__dirname, "./html/tables.html"));
 })
 
+app.get("/api/tables", function(req, res) {
+	return res.json(tables)
+})
 
 app.post('/api/tables'), function (req, res) {
 	let newreservation = req.body;
