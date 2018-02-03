@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hot Restaurant</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-<link rel="stylesheet" href="../assets/style.css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hot Restaurant</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
 </head>
-<body>
-<!-- Main Container -->
-  <div class="container">
-	<!-- Top Jumbotron -->
-	<div class="row justify-text-center">
-		<div class="col-12">
-			<div class="jumbotron main-jumbo">
-		  		<h1 class="display-4">Hot Resaurant</h1>
-		  		<p class="lead">Make a reservation</p>
-		  		<hr class="my-4">
-		  		<p>We only have 5 tables! Book your seat before they all are gone!
-				</p>
-		  		<p class="lead">
-		   			<a class="btn btn-primary btn-lg" href="./tables.html" role="button">View Tables</a>
-		   			<a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
-		  		</p>
-			</div>
-		</div>
-	</div>
-	<!-- /Top Jumbotron -->
 
-<!-- /Main Container -->
- <!-- Form -->
-  <div class="card">
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Top Jumbotron -->
+    <div class="row justify-text-center">
+      <div class="col-12">
+        <div class="jumbotron main-jumbo">
+          <h1 class="display-4">Hot Resaurant</h1>
+          <p class="lead">Make a reservation</p>
+          <hr class="my-4">
+          <p>We only have 5 tables! Book your seat before they all are gone!
+          </p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="./tables.html" role="button">View Tables</a>
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /Top Jumbotron -->
+
+    <!-- /Main Container -->
+    <!-- Form -->
+    <div class="card">
       <h5 class="card-header">Make a reservation</h5>
       <div class="col-12">
         <form>
@@ -53,11 +59,13 @@
           <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
       </div>
+    </div>
+    <!-- /Form -->
+    <a href="/api/tables">View Tables</a>
+    <a href="/api/waitlist">View Waitlist</a>
   </div>
-<!-- /Form -->
-<a href="/api/tables">View Tables</a>
-<a href="/api/waitlist">View Waitlist</a></div>
-</div>
-<!-- /Main Container -->
+  </div>
+  <!-- /Main Container -->
 </body>
+
 </html>
